@@ -333,13 +333,28 @@ site-nav .link:focus {
 .masters-soc-item:last-child {
     margin-right: 0;
 }
-.masters-soc-link {
+.masters-soc-link,
+.footer-link {
     width: 100%;
     height: 100%;
-    background: tomato;
+   
     border-radius: 50%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.masters-soc-icon {
+    fill:#AFB1B8;
+}
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: var(--accent-color);
+  }
+.masters-soc-link:hover .masters-soc-icon,
+.masters-soc-link:focus .masters-soc-icon {
+fill: var(--primary-bg-color);
+}
+
 .section-subtitlef {
     margin-top: 0;
     margin-bottom: 30px;
@@ -558,10 +573,11 @@ width: 44px;
 height: 44px;
 margin-right: 10px;
 }
-.footer-link {
-    width: 100%;
-    height: 100%;
-    background: tomato;
-    border-radius: 50%;
-    display: block;
+.masters-soc-iconf {
+    fill:var(--primary-bg-color)
 }
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--accent-color);
+}
+
