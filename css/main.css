@@ -235,11 +235,15 @@ site-nav .link:focus {
 .one-section-link {
     width: 270px;
     height: 120px;
-    display: block;
+    display: flex;
+    align-items: center ;
     background: tomato;
     margin-bottom: 30px;
 }
-
+.one-section-icon {
+    width: 66px;
+    height: 70px;
+}
 .section-title,
 .title {
     margin-bottom: 50px;
