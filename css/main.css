@@ -61,7 +61,7 @@ img {
 /*-------heder-----*/
 
 .header {
-     border: 1px solid
+   
      var(--color-border);
      border-bottom:1px solid #ECECEC; ;
 }
@@ -146,7 +146,10 @@ site-nav .link:focus {
     align-items: center;
 }
 .icon-link {
+    display: flex;
+    align-items: center;
     margin-right: 10px;
+    fill: var(--second-color-text);
 }
 .item:hover > a,
 .item:focus > a {
@@ -182,6 +185,7 @@ site-nav .link:focus {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: 0 auto;
 
     max-width: 1600px;
     background-image: linear-gradient(to right,
@@ -381,7 +385,7 @@ fill: var(--primary-bg-color);
 
 .section-subtitlef {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 
     color: var(--second-color-text);
     font-size: 16px;
@@ -493,23 +497,22 @@ border-color: var(--accent-color);
 .item-page {
  flex-basis:calc((100%-2*30px)\3);
 }
-.item-page:hover {
+.page-link:hover {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .page-link {
 
-    text-decoration: none;
-    width: 370px;
-    height: 404px;
-    margin-right: 0;
+    text-decoration: none; 
     margin-bottom: 30px;
 }
 
 .page-title-text {
-    border-left:  solid #EEEEEE;
-    border-right: solid #EEEEEE;
-    border-bottom: solid #EEEEEE;
+    border: 1px solid #EEEEEE;;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
     padding: 20px 24px;
 }
 
@@ -537,8 +540,6 @@ border-color: var(--accent-color);
     background-color: var(--color-fon-footer);
 }
 .footer-content {
-    max-width: 376px;
-    min-height: 112px;
     margin-right: 70px;
 }
 .footer > .container {
@@ -615,6 +616,8 @@ margin-bottom: 20px;
 width: 44px;
 height: 44px;
 margin-right: 10px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
 }
 .masters-soc-iconf {
     fill:var(--primary-bg-color)
